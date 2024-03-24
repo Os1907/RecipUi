@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background-color: #d72540 !important;
+}
+
+.my-bg{
+  background-image: url(../public/pngegg\ \(2\).png);
+background-size: cover;
+  opacity: 0.05;
+  z-index: 0;
+  position: absolute;
+}
+
+
+body {
+  --sb-track-color: #d72540;
+  --sb-thumb-color: #f15b28;
+  --sb-size: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+.scale-in-hor-right {
+  -webkit-animation: scale-in-hor-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-hor-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-hor-right {
+0% {
+-webkit-transform: scaleX(0);
+    transform: scaleX(0);
+-webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+opacity: 1;
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+-webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+opacity: 1;
+}
+}
+@keyframes scale-in-hor-right {
+0% {
+-webkit-transform: scaleX(0);
+    transform: scaleX(0);
+-webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+opacity: 1;
+}
+100% {
+-webkit-transform: scaleX(1);
+    transform: scaleX(1);
+-webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+opacity: 1;
+}
+}
+.slide-out-right {
+  -webkit-animation: slide-out-right 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-right 0.9s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes slide-out-right {
+0% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+99.5%{
+width: 0;
+}
+100% {
+-webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+opacity: 0;
+
+}
+}
+@keyframes slide-out-right {
+0% {
+-webkit-transform: translateX(0);
+    transform: translateX(0);
+opacity: 1;
+}
+
+100% {
+width: 0;
+display: none;
+
+}
+}
+
+.menu li > *:not(ul, .menu-title, details, .btn):active, .menu li > *:not(ul, .menu-title, details, .btn).active, .menu li > details > summary:active {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):is(summary):not(.active, .btn):focus-visible, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn).focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(summary, .active, .btn):focus, :where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):is(summary):not(.active, .btn):focus-visible {
+  color: white !important;
+  background-color: transparent !important;
+  border-bottom: #f15b28 2px solid;
+}
+
+:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover{
+  background-color: transparent !important;
+
+}
+
+
+ 
