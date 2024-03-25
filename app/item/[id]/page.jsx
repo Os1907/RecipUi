@@ -32,14 +32,14 @@ export default async function meal({params}) {
       <div className="relative flex items-center   bg-gradient-to-r from-mainRed via-mainRed to-main_orange w-full">
         
         <div className="p-8 sm:p-16 lg:p-24 text-center w-full z-10 ">
-    <h2 className='text-white lg:text-5xl text-3xl p-2  font-bold uppercase bg-gradient-to-l inline-block   from-main_orange'>
+    <h2 className='text-white hand lg:text-5xl md:text-3xl text-xl p-2  font-semibold  bg-gradient-to-l inline-block   from-main_orange'>
       {meals[0]?.strMeal}
       </h2>
-<div className='my-3'>
+<div className='my-3 flex flex-col gap-y-3'>
   <p className='bg-gradient-to-l inline-block py-1 px-2  from-main_orange text-white font-semibold'>
   <IoEarthOutline className='inline mb-1 text-lg' />   Area : <span className='font-normal'> {meals[0]?.strArea} </span>  
   </p>
-  <p className='bg-gradient-to-l inline-block py-1 px-2 mx-2  from-main_orange text-white font-semibold'>
+  <p className='bg-gradient-to-l  inline-block py-1 px-2 mx-2  from-main_orange text-white font-semibold'>
   <MdOutlineCategory className='inline mb-1 text-xl' /> Category : <span className='font-normal'> {meals[0]?.strCategory} </span>  
   </p>
   
@@ -47,11 +47,11 @@ export default async function meal({params}) {
 <details  className="group py-1 text-lg">
 <summary className="flex cursor-pointer flex-row items-center justify-between py-1 font-semibold text-white marker:[font-size:0px]">
       Instructions
-        <svg className="h-6 w-6 rotate-0 transform text-white group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <svg className="h-6 w-6 rotate-0 transform hidden lg:block text-white group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
         </svg>
       </summary>
-          <p className="mt-4 text-white text-start">
+          <p className="mt-4 text-white text-start text-sm">
           {meals[0]?.strInstructions}
           </p>
     </details>
@@ -67,7 +67,7 @@ export default async function meal({params}) {
       Ingredient?.map((item)=>{
         return (
           <>
-          <p key={ 5 * Math.random()} className='bg-white inline-block px-1 tex-sm md:text-base lg:py-1 lg:px-3 lg:mx-2  rounded-md text-main_orange font-semibold'>
+          <p key={ 5 * Math.random()} className='bg-white inline-block px-1 text-[10px] md:text-base lg:py-1 lg:px-3 lg:mx-2  rounded-md text-main_orange font-medium'>
           {item} 
   </p>
           </>

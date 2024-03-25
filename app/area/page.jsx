@@ -24,16 +24,16 @@ export default async function page() {
   <figure>
   <BiSolidHomeHeart  className='size-36'/>
   </figure>
+  <Link href={`/area/${item.strArea}`}>
   <div className="pt-5 w-full text-center">
-    <h2 className="lg:text-xl text-base font-bold ">{item.strArea}</h2>
+    <h2 className="lg:text-xl text-sm md:text-base font-bold ">{item.strArea}</h2>
   </div>
   <div className='   mt-2 mb-4'>
-  <Link href={`/area/${item.strArea}`}>
     <button className='rounded-md hover:font-semibold py-1 hover:px-3 text-sm lg:text-base lg:hover:px-10 duration-300 hover:bg-gradient-to-tl hover:bg-mainRed  p-2'>
     View Items
     </button>
-  </Link>
   </div>
+  </Link>
 </div>
              </>
         })

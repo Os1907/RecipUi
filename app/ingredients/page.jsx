@@ -29,10 +29,10 @@ export default async function page() {
 <h2 className="lg:text-xl text-base font-bold ">{item.strIngredient}</h2>
 {
 
-    item.strDescription == null ? "" :  <p className=' text-sm rounded-md py-1 px-2 hidden lg:inline-block  text-orange-400 '>{item.strDescription.split(" ").slice(0,18).join(" ")}</p>
+    item.strDescription == null ? "" :  <p className=' text-sm hand rounded-md py-1 px-2 hidden lg:inline-block  text-orange-400 '>{item.strDescription.split(" ").slice(0,18).join(" ")}</p>
     }
     {
-       item.strDescription == null ? "" : <p className=' text-sm rounded-md py-1 px-2 lg:hidden  text-orange-400 inline-block'>{item.strDescription.split(" ").slice(0,10).join(" ")}</p>
+       item.strDescription == null ? "" : <p className=' text-sm hand rounded-md py-1 px-2 lg:hidden  text-orange-400 inline-block'>{item.strDescription.split(" ").slice(0,10).join(" ")}</p>
     }
     
 </div>

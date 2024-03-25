@@ -13,7 +13,7 @@ export default function HomeCont() {
       introduce to you the most delicious
         <span className="sm:block"> recipes from around the world </span>
       </h1>
-      <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed font-medium lg:text-2xl lg:font-bold  ">
+      <p className="mx-auto font2 relative z-10 mt-4 max-w-xl sm:text-xl/relaxed font-medium lg:text-2xl lg:font-bold  ">
        Explore Now
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-4 " >

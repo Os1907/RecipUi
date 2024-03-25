@@ -10,12 +10,20 @@ body{
 .my-bg{
   background-image: url(../public/pngegg\ \(2\).png);
 background-size: cover;
-  opacity: 0.05;
   z-index: 0;
   position: absolute;
 }
 
+.font2{
+  font-family: "Righteous", sans-serif;
+}
+h2{
+  font-family: "Righteous", sans-serif;
 
+}
+.hand{
+  font-family: "Sacramento", cursive;
+}
 body {
   --sb-track-color: #d72540;
   --sb-thumb-color: #f15b28;

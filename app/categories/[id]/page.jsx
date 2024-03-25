@@ -25,16 +25,16 @@ export default async function CategoriesItem({params}) {
         return <>
        <div key={item.idMeal} className=" relative flex flex-col items-center  rounded-2xl   bg-gradient-to-b from-transparent to-main_orange md:col-span-4 lg:col-span-3 col-span-6 lg:hover:scale-110  duration-300 ">
 <figure><Image src={item.strMealThumb} alt="food-image" width={150} height={150} className='rounded-full'/></figure>
-<div className="pt-5 w-full text-center">
-<h2 className="lg:text-xl text-base font-bold ">{item.strMeal}</h2>
-</div>
-<div className=' my-2'>
 <Link href={`/item/${item.idMeal}`}>
+<div className="pt-5 w-full text-center">
+<h2 className="lg:text-xl text-sm font-bold font2 ">{item.strMeal}</h2>
+</div>
+<div className=' my-2 w-full flex justify-center'>
 <button className='rounded-md hover:font-semibold py-1 hover:px-3 text-sm lg:text-base lg:hover:px-10 duration-300 hover:bg-gradient-to-tl hover:bg-mainRed  p-2'>
 View Items
 </button>
-</Link>
 </div>
+</Link>
 </div>
          </>
     })

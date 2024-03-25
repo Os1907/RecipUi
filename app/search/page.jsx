@@ -31,7 +31,7 @@ export default  function Search() {
   <figure><Image src={item.strMealThumb} alt="food-image" width={100} height={100} className='rounded-full'/></figure>
   <div className="pt-5 w-full text-center">
     <h2 className=" font-bold lg:text-xl text-base ">{item.strMeal}</h2>
-    <p className=' text-sm rounded-md py-1 px-2  text-orange-400 inline-block'>{item.strArea}</p>
+    <p className=' text-sm rounded-md py-1 px-2 hand  text-orange-400 inline-block'>{item.strArea}</p>
   </div>
   <div className='mt-2 mb-4'>
   <Link href={`/item/${item.idMeal}`}>
