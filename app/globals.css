@@ -14,16 +14,7 @@ background-size: cover;
   position: absolute;
 }
 
-.font2{
-  font-family: "Righteous", sans-serif;
-}
-h2{
-  font-family: "Righteous", sans-serif;
 
-}
-.hand{
-  font-family: "Sacramento", cursive;
-}
 body {
   --sb-track-color: #d72540;
   --sb-thumb-color: #f15b28;

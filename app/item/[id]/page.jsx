@@ -26,20 +26,21 @@ export default async function meal({params}) {
         <div className="relative h-64 sm:h-80 lg:h-full ">
 
           <Image alt="Meal Image" src={meals[0]?.strMealThumb} width={250} height={250} className="rounded-3xl absolute inset-0 h-full w-full lg:h-[90%] lg:w-[90%] object-cover  " />
-          <div className='absolute h-full top-0 lg:top-[-10%] bg-gradient-to-t from-mainRed w-full '></div>
+          <div className='absolute h-[90%] top-7 rounded-3xl lg:top-0 bg-gradient-to-t from-mainRed w-full '></div>
         </div>
       </div>
       <div className="relative flex items-center   bg-gradient-to-r from-mainRed via-mainRed to-main_orange w-full">
         
         <div className="p-8 sm:p-16 lg:p-24 text-center w-full z-10 ">
-    <h2 className='text-white hand lg:text-5xl md:text-3xl text-xl p-2  font-semibold  bg-gradient-to-l inline-block   from-main_orange'>
+
+<div className='my-3 flex flex-col gap-y-3'>
+    <h2 className='text-white hand lg:text-5xl md:text-3xl text-2xl py-2 px-3 rounded  font-semibold  bg-gradient-to-l inline-block   from-main_orange'>
       {meals[0]?.strMeal}
       </h2>
-<div className='my-3 flex flex-col gap-y-3'>
-  <p className='bg-gradient-to-l inline-block py-1 px-2  from-main_orange text-white font-semibold'>
+  <p className='bg-gradient-to-l inline-block py-1 px-2  from-main_orange text-white font-semibold text-sm'>
   <IoEarthOutline className='inline mb-1 text-lg' />   Area : <span className='font-normal'> {meals[0]?.strArea} </span>  
   </p>
-  <p className='bg-gradient-to-l  inline-block py-1 px-2 mx-2  from-main_orange text-white font-semibold'>
+  <p className='bg-gradient-to-l  inline-block py-1 px-2 mx-2  from-main_orange text-white font-semibold text-sm'>
   <MdOutlineCategory className='inline mb-1 text-xl' /> Category : <span className='font-normal'> {meals[0]?.strCategory} </span>  
   </p>
   

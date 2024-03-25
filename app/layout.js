@@ -1,16 +1,10 @@
-import { Poppins , Righteous , Sacramento } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar/Navbar";
 import Footer from "./_components/Footer/Footer";
 
 const pop = Poppins({ subsets: ["latin"] , 
 weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] ,
-});
-const Gochi = Righteous({ subsets: ["latin"] , 
-weight: [ "400"] ,
-});
-const hand = Sacramento({ subsets: ["latin"] , 
-weight: [ "400"] ,
 });
 
 

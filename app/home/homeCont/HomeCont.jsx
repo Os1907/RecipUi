@@ -24,7 +24,7 @@ export default function HomeCont() {
       </div>
     </div>
   </div>
-  <div className=' h-[85%] top-10 w-full  bg-repeat my-bg z-0'>
+  <div className=' h-[85%] top-10 w-full  bg-repeat my-bg z-0 opacity-5'>
         </div>
 </section>
     
