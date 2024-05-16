@@ -2,6 +2,7 @@
 const nextConfig = {
     images: {
         domains: ['www.themealdb.com'],
+        unoptimized: true
     },
 };
 
